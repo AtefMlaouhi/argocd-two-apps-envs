@@ -3,4 +3,11 @@ kind: Deployment
 metadata:
   name: app-two
 spec:
-  replicas: 1
+  replicas: 2
+  selector:
+    matchLabels:
+      app: app-two
+  template:
+    metadata:
+      labels:
+        app: app-two
