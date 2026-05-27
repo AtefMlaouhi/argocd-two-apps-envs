@@ -6,6 +6,7 @@ metadata:
     app: app-two
 spec:
   replicas: 2
+  revisionHistoryLimit: 1
   selector:
     matchLabels:
       app: app-two
@@ -14,7 +15,7 @@ spec:
       labels:
         app: app-two
       annotations:
-        argocd-sync-force: "2026-05-27T12:00:00Z"
+        argocd-sync-force: "2026-05-27T12:10:00Z"
     spec:
       containers:
         - name: nginx
