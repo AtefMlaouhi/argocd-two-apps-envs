@@ -7,7 +7,7 @@ spec:
   project: bi-project
 
   source:
-    repoURL: https://github.com/YOUR_ORG/argocd-two-apps-envs.git
+    repoURL: https://github.com/AtefMlaouhi/argocd-two-apps-envs.git
     targetRevision: main
     path: apps/app-two/overlays/dev
 
