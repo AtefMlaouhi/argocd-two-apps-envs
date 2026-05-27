@@ -14,7 +14,7 @@ spec:
       labels:
         app: app-one
       annotations:
-        argocd-sync-force: "2026-05-27T00:00:00Z"
+        argocd-sync-force: "2026-05-28T05:00:00Z"
     spec:
       containers:
         - name: nginx
