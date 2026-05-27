@@ -1,0 +1,15 @@
+resources:
+  - ../../base
+
+namespace: dev
+
+configMapGenerator:
+  - name: app-one-html
+    files:
+      - index.html
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+patchesStrategicMerge:
+  - replicas-patch.yaml

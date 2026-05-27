@@ -1,0 +1,15 @@
+resources:
+  - ../../base
+
+namespace: dev
+
+configMapGenerator:
+  - name: app-two-html
+    files:
+      - index.html
+
+generatorOptions:
+  disableNameSuffixHash: true
+
+patchesStrategicMerge:
+  - replicas-patch.yaml
